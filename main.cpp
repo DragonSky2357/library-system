@@ -20,7 +20,7 @@ int main(void) {
 	
 	char curDir[1000];
 
-	//system("C:\\Users\\qkrdy\\source\\repos\\LibrarySystem\\Debug\\BookDownload.exe");
+	// system("C:\\Users\\qkrdy\\source\\repos\\LibrarySystem\\Debug\\BookDownload.exe");
 	
 	_getcwd(curDir, 1000);
 
@@ -32,15 +32,15 @@ int main(void) {
 	*/
 
 	
-	User* u = new Manager("±èÃ¶¼ö", "testID", "address", "010-1234-5678", "test@naver.com", "»ç¿ø");
-	u->printUserInfomation();
+	//User* u = new Manager("±èÃ¶¼ö", "testID", "address", "010-1234-5678", "test@naver.com", "»ç¿ø");
+	//u->printUserInfomation();
 
 	Library c;
-	c.searchBook();
+	//c.searchBook();
 	
-
+	c.borrowBook();
+	c.returnBook();
 	
-
 	// list.deleteBook();
 	// a->printBookInfomation();
 	// list.listBookPrint();

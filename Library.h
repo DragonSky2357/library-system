@@ -14,14 +14,19 @@ public:
 	void addMember();
 	void borrowBook();
 	void returnBook();
-	void searchBook();
-	
-private:
-	bool loadBookData();
-	bool loadUserData();
+	Book* searchBook();
+	Member* findUser(const string identifyID, const string identifyPhoneNumber);
 
+private:
+	bool addManager();
+	bool loadManagerData();
+	bool loadBookData();
+	bool loadMemberData();
 private:
 	Manager*	libraryManager;
 	list<User*> libraryMembers;
 	BookList*	librarySynthesisBookList;
+
+public:
+	static const int MAXIMUM_BORROW_COUNT = 10;
 };

@@ -34,35 +34,26 @@ bool BookList::addPersonalBook(){
 
 bool BookList::addBook(Book* newBook) {
 	bookList.push_back(newBook);
+	bookCount++;
 	return true;
 }
 bool BookList::deleteBook()
 {
-	Book* deleteBook = searchBook();
-
-	if (deleteBook != nullptr) {
-		for (auto it = bookList.begin(); it != bookList.end(); it++) {
-			if ((*it)->getBookTitle() == deleteBook->getBookTitle()) {
-				bookList.erase(it);
-				delete deleteBook;
-				bookCount--;
-				return true;
-			}
-		}
-	}
+	bookList.erase(searchBook());
 	return false;
 }
 
-Book* BookList::searchBook(){
+list<Book*>::iterator BookList::searchBook(){
 	string searchBookTitle;
 	cin.ignore();
 	cout << "Á¦¸ñ   => "; getline(cin,searchBookTitle);
 
 	for (auto it = bookList.begin(); it != bookList.end(); it++) {
 		if ((*it)->getBookTitle() == searchBookTitle)
-			return (*it);
+			return (it);
 	}
-	return nullptr;
+
+	return bookList.end();
 }
 
 

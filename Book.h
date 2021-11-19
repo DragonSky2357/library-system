@@ -38,6 +38,10 @@ public:
 			:bookTitle(bookTitle), bookAuth(bookAuth), bookPublisher(bookPublisher),bookPublishing(bookPublishing),
 		bookPrice(bookPrice), bookImage(bookImage),bookDetail(bookDetail),bookImportDay(time(NULL)){}
 
+	Book(const Book& book)
+		:bookTitle(book.bookTitle), bookAuth(book.bookAuth), bookPublisher(book.bookPublisher), bookPublishing(book.bookPublishing),
+		bookPrice(book.bookPrice), bookImage(book.bookImage), bookDetail(book.bookDetail), bookImportDay(time(NULL)) {}
+
 	string getBookTitle() { return bookTitle; }
 	string getBookAuth() { return bookAuth; }
 	string getBookPublisher() { return bookPublisher; }

@@ -13,9 +13,10 @@ Manager* Manager::initManager()
 	string inputManagerPhoneAddress; cout << "휴대폰 번호 : "; cin >> inputManagerPhoneAddress;
 	string inputManagerEmail; cout << "이메일 : "; cin >> inputManagerEmail;
 	string inputManagerGrade; cout << "직급 : "; cin >> inputManagerGrade;
+	time_t inputManagerRegisterDay = time(NULL);
 
 	return new Manager(inputManagerName, inputManagerID, inputManagerAddress,
-		inputManagerPhoneAddress, inputManagerEmail, inputManagerGrade);
+		inputManagerPhoneAddress, inputManagerEmail, inputManagerRegisterDay,inputManagerGrade);
 }
 
 void Manager::notificationOfLibrary(){

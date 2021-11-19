@@ -16,9 +16,10 @@ public:
 		:bookCategory(bookCategory),bookCount(0){}
 	static BookList* initBookList(const string bookCategory="а╬гу");
 	int getBookCount() { return bookCount; }
+
 	bool addPersonalBook();
 	bool addBook( Book* newBook);
 	bool deleteBook();
-	Book* searchBook();
+	list<Book*>::iterator searchBook();
 	void listBookPrint();
 };
