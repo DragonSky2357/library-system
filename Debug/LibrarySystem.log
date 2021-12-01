@@ -1,2 +1,12 @@
-﻿  Member.cpp
-  LibrarySystem.vcxproj -> C:\Users\qkrdy\source\repos\LibrarySystem\Debug\LibrarySystem.exe
+﻿main.obj : error LNK2019: "public: __thiscall CSmtp::CSmtp(void)" (??0CSmtp@@QAE@XZ)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: virtual __thiscall CSmtp::~CSmtp(void)" (??1CSmtp@@UAE@XZ)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::AddRecipient(char const *,char const *)" (?AddRecipient@CSmtp@@QAEXPBD0@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::AddMsgLine(char const *)" (?AddMsgLine@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::Send(void)" (?Send@CSmtp@@QAEXXZ)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetSubject(char const *)" (?SetSubject@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetSenderName(char const *)" (?SetSenderName@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetSenderMail(char const *)" (?SetSenderMail@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetLogin(char const *)" (?SetLogin@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetPassword(char const *)" (?SetPassword@CSmtp@@QAEXPBD@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall CSmtp::SetSMTPServer(char const *,unsigned short,bool)" (?SetSMTPServer@CSmtp@@QAEXPBDG_N@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\qkrdy\source\repos\LibrarySystem\Debug\LibrarySystem.exe : fatal error LNK1120: 11개의 확인할 수 없는 외부 참조입니다.

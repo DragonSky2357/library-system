@@ -37,23 +37,33 @@ bool BookList::addBook(Book* newBook) {
 	bookCount++;
 	return true;
 }
-bool BookList::deleteBook()
+bool BookList::deleteBook(Book* delBook)
 {
-	bookList.erase(searchBook());
+	const string delBookTitle = delBook->getBookTitle();
+
+	auto isBookInBookList = 
+		find_if(bookList.begin(), bookList.end(),
+			[delBookTitle](Book* book) {return book->getBookTitle() == delBookTitle; });
+
+	if (isBookInBookList != bookList.end()) {
+		bookList.erase(isBookInBookList);
+		return true;
+	}
+	
 	return false;
 }
 
-list<Book*>::iterator BookList::searchBook(){
+Book* BookList::searchBook(){
 	string searchBookTitle;
 	cin.ignore();
 	cout << "Á¦¸ñ   => "; getline(cin,searchBookTitle);
 
 	for (auto it = bookList.begin(); it != bookList.end(); it++) {
 		if ((*it)->getBookTitle() == searchBookTitle)
-			return (it);
+			return (*it);
 	}
 
-	return bookList.end();
+	return nullptr;
 }
 
 

@@ -16,6 +16,11 @@ void Library::borrowBook(){
 
 	Member* borrowUser =  findUser(identifyID, identifyPhoneNumber);
 
+	if (borrowUser == nullptr) {
+		cout << "회원이 존재 하지 않습니다.";
+		return;
+	}
+
 	if (borrowUser->getBookLoanCount() >= Library::MAXIMUM_BORROW_COUNT) {
 		cout << "대여가능한 권수를 초과하였습니다.";
 		return;
@@ -72,7 +77,7 @@ Member* Library::findUser(const string identifyID, const string identifyPhoneNum
 }
 
 Book* Library::searchBook() {
-	return  (*librarySynthesisBookList->searchBook());
+	return  librarySynthesisBookList->searchBook();
 }
 
 
@@ -195,7 +200,7 @@ bool Library::loadMemberData()
 
 bool Library::loadBookData()
 {
-	ifstream fin("C:\\Users\\qkrdy\\source\\repos\\LibrarySystem\\LibrarySystem\\20211118\\20211118.txt");
+	ifstream fin("C:\\Users\\qkrdy\\source\\repos\\LibrarySystem\\LibrarySystem\\20211120\\20211120.txt");
 	string data;
 
 	while (getline(fin, data))

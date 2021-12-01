@@ -18,8 +18,8 @@ public:
 	int getBookCount() { return bookCount; }
 
 	bool addPersonalBook();
-	bool addBook( Book* newBook);
-	bool deleteBook();
-	list<Book*>::iterator searchBook();
+	bool addBook(Book* newBook);
+	bool deleteBook(Book* delBook);
+	Book* searchBook();
 	void listBookPrint();
 };

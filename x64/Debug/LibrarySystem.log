@@ -1,0 +1,26 @@
+﻿  Book.cpp
+C:\Users\qkrdy\source\repos\LibrarySystem\LibrarySystem\Book.h(16,24): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BookList.cpp
+C:\Users\qkrdy\source\repos\LibrarySystem\LibrarySystem\Book.h(16,24): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Library.cpp
+C:\Users\qkrdy\source\repos\LibrarySystem\LibrarySystem\Book.h(16,24): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+C:\Users\qkrdy\source\repos\LibrarySystem\LibrarySystem\Book.h(16,24): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Manager.cpp
+  Member.cpp
+C:\Users\qkrdy\source\repos\LibrarySystem\LibrarySystem\Book.h(16,24): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  System.cpp
+  User.cpp
+  코드를 생성하고 있습니다...
+main.obj : error LNK2019: "public: __cdecl CSmtp::CSmtp(void)" (??0CSmtp@@QEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: virtual __cdecl CSmtp::~CSmtp(void)" (??1CSmtp@@UEAA@XZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::AddRecipient(char const *,char const *)" (?AddRecipient@CSmtp@@QEAAXPEBD0@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::AddMsgLine(char const *)" (?AddMsgLine@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::Send(void)" (?Send@CSmtp@@QEAAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetSubject(char const *)" (?SetSubject@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetSenderName(char const *)" (?SetSenderName@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetSenderMail(char const *)" (?SetSenderMail@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetLogin(char const *)" (?SetLogin@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetPassword(char const *)" (?SetPassword@CSmtp@@QEAAXPEBD@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __cdecl CSmtp::SetSMTPServer(char const *,unsigned short,bool)" (?SetSMTPServer@CSmtp@@QEAAXPEBDG_N@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\qkrdy\source\repos\LibrarySystem\x64\Debug\LibrarySystem.exe : fatal error LNK1120: 11개의 확인할 수 없는 외부 참조입니다.
